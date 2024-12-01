@@ -39,87 +39,116 @@ Publish the website in the LocalHost.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Cover</title>
     <style>
-        body
-        {
-
+        /* General Styles */
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom right, #333333, #000000);
+            font-family: 'Times New Roman', Times, serif;
         }
-        .book{
+
+        /* Book Cover Styles */
+        .book {
             width: 480px;
             height: 740px;
-            background-color:#241E20;
+            background-color: #241E20;
             color: white;
             display: flex;
             flex-direction: column;
-            justify-content:space-between;
+            justify-content: space-between;
             align-items: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
             text-align: center;
-            font-family:'Times New Roman', Times, serif;
+            padding: 20px;
         }
+
+        .book h2, .book h3, .book h4, .book h5, .book h6 {
+            margin: 0;
+            line-height: 1.2;
+        }
+
         .book h2 {
-    font-size: 1.4rem; 
-    font-family:'Times New Roman', Times, serif
-    color : white;
-    margin : 5px 0 0; 
-    line-height: 1;
-}
-.book h3 {
-    font-size: 20px; 
-    font-family:'Times New Roman', Times, serif; 
-    color: white;
-    margin: 5px 0 0; 
-    line-height: 1;
-}
-.book h4 {
-    font-size: 70px; 
-    font-family:'Times New Roman', Times, serif ;
-    color: skyblue;
-    margin: 5px 0 0; 
-    line-height: 1;
-}
-.book h6 {
-    font-size: 60px; 
-    font-family:'Times New Roman', Times, serif ;
-    color: skyblue;
-    margin: 5px 0 0;
-    line-height: 1;
-}
-.book h4, .book h5, .book h6 {
-    margin: 0;
-    line-height: 1;
-}
+            font-size: 1.4rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
 
+        .book h4 {
+            font-size: 70px;
+            color: skyblue;
+        }
 
+        .book h5 {
+            font-size: 18px;
+            color: #ffffff;
+            margin: 10px 0;
+        }
 
+        .book h6 {
+            font-size: 60px;
+            color: skyblue;
+        }
 
+        /* Edition Box */
+        .edition-box {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background: crimson;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-transform: uppercase;
+        }
 
+        .book h3 {
+            font-size: 14px;
+            color: #ffffff;
+            margin-top: 15px;
+            padding-top: 10px; /* Adds spacing between text and the line */
+            border-top: 2px solid #ffffff; /* Line above the text */
+            width: 80%; /* Adjusts line width to fit the text nicely */
+            text-align: center;
+        }
+
+        .book img {
+            margin: 15px 0;
+            border: 3px solid #ffffff;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .book img:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
-    <h1><ma</h1>
-    <container>
-        <div class="book">
-        <div><h2><b>Build data driven solution using R</b></h2></div>
-        <div><h4><b>DATA <br>SCINCE</b></h4></div>
-        <div><h5><b>--------- for ----------</b></h5></div>
-        <div><h6><b>FUNDRAISING</b></h6></div>
-        <div><img src="imagebook.jpg" width="250" height="300"></div>    
-        <div><h3>Written By Prabu Karthiek (24010663)</h3></div>
-     </div>
-    </container>
-    
+    <div class="book">
+        <h2><b>Build Data-Driven Solutions Using R</b></h2>
+        <h4><b>DATA <br> SCIENCE</b></h4>
+        <h5><b>--------- for ----------</b></h5>
+        <h6><b>FUNDRAISING</b></h6>
+        <!-- Edition Box -->
+        <div class="edition-box">Edition - 3</div>
+        <img src="imagebook.jpg" alt="Book Cover" width="250" height="300">
+        <h3>ASHUTOSH NANDESHWAR, Ph.D | RODGER DEVINE, M.S</h3>
+    </div>
 </body>
 </html>
+
 
 ```
 
 ## OUTPUT:
 
-![alt text](<Screenshot 2024-11-30 001124.png>)
+![alt text](<Screenshot 2024-12-01 124550.png>)
 
 
 ## RESULT:
