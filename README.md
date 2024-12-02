@@ -39,7 +39,7 @@ Publish the website in the LocalHost.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Cover</title>
     <style>
-        /* General Styles */
+       
         body {
             display: flex;
             justify-content: center;
@@ -50,9 +50,9 @@ Publish the website in the LocalHost.
             font-family: 'Times New Roman', Times, serif;
         }
 
-        /* Book Cover Styles */
+        
         .book {
-            position: relative; /* Enable positioning for child elements */
+            position: relative; 
             width: 480px;
             height: 740px;
             background-color: #241E20;
@@ -94,7 +94,6 @@ Publish the website in the LocalHost.
             color: skyblue;
         }
 
-        /* Edition Box */
         .edition-box {
             display: inline-block;
             padding: 10px 20px;
@@ -112,9 +111,9 @@ Publish the website in the LocalHost.
             font-size: 14px;
             color: #ffffff;
             margin-top: 15px;
-            padding-top: 10px; /* Adds spacing between text and the line */
-            border-top: 2px solid #ffffff; /* Line above the text */
-            width: 80%; /* Adjusts line width to fit the text nicely */
+            padding-top: 10px; 
+            border-top: 2px solid #ffffff; 
+            width: 80%; 
             text-align: center;
         }
 
@@ -129,18 +128,18 @@ Publish the website in the LocalHost.
             transform: scale(1.05);
         }
 
-        /* Author Image Styles */
+    
         .author-image {
-            position: absolute; /* Position inside the parent */
-            bottom: 20px; /* Space from the bottom */
-            right: 20px; /* Space from the right */
+            position: absolute;
+            bottom: 20px; 
+            right: 20px; 
             width: 80px;
             height: 80px;
             border: 3px solid #ffffff;
             border-radius: 50%;
             transition: transform 0.3s ease;
-            background-color: #241E20; /* Match book background */
-            object-fit: cover; /* Ensures the image fits inside the circle */
+            background-color: #241E20; 
+            object-fit: cover; 
         }
 
         .author-image:hover {
