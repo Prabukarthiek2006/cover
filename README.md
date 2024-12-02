@@ -52,6 +52,7 @@ Publish the website in the LocalHost.
 
         /* Book Cover Styles */
         .book {
+            position: relative; /* Enable positioning for child elements */
             width: 480px;
             height: 740px;
             background-color: #241E20;
@@ -127,6 +128,24 @@ Publish the website in the LocalHost.
         .book img:hover {
             transform: scale(1.05);
         }
+
+        /* Author Image Styles */
+        .author-image {
+            position: absolute; /* Position inside the parent */
+            bottom: 20px; /* Space from the bottom */
+            right: 20px; /* Space from the right */
+            width: 80px;
+            height: 80px;
+            border: 3px solid #ffffff;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            background-color: #241E20; /* Match book background */
+            object-fit: cover; /* Ensures the image fits inside the circle */
+        }
+
+        .author-image:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
@@ -139,6 +158,8 @@ Publish the website in the LocalHost.
         <div class="edition-box">Edition - 3</div>
         <img src="imagebook.jpg" alt="Book Cover" width="250" height="300">
         <h3>ASHUTOSH NANDESHWAR, Ph.D | RODGER DEVINE, M.S</h3>
+        <!-- Author Image -->
+        <img src="pk passport.jpeg" alt="Author Image" class="author-image">
     </div>
 </body>
 </html>
@@ -148,7 +169,7 @@ Publish the website in the LocalHost.
 
 ## OUTPUT:
 
-![alt text](<Screenshot 2024-12-01 124550.png>)
+![alt text](<Screenshot 2024-12-02 220028.png>)
 
 
 ## RESULT:
